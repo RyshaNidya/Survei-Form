@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Forum Survei | by Rysha Nidya</title>
+    <link rel="stylesheet" href="styles.css"></link>
+  </head>
+  <body>
+    <h1 id="title">Forum Survei Kepuasan Pengguna</h1>
+    <p id="description">Terimakasih sudah mau meluangkan waktunya untuk mengisi forum survei terkait aplikasi kami!...</p>
+
+    <div class="container">
+      <form action="/" method="post" id="survey-form">
+
+        <fieldset>
+          <!-- nama -->
+          <label for="name" id="name-label">Nama Lengkap : 
+            <input id="name" type="text" required placeholder="Cth. Yurisha Anindya">
+          </label>
+          <!-- Jenis kelamin -->
+          <label>Jenis Kelamin :</label>
+          <label for="man" id="gender" class="jk">
+            <input id="man" type="radio" name="gender" class="gender" value="Laki-laki" checked  > Laki-laki
+          </label>
+          <labelclass="jk"  for="girl"><input id="girl" type="radio" name="gender" class="gender" value="Perempuan"> Perempuan</label>
+          <!-- Usia -->
+          <label for="number" id="number-label">Usia (optional) : 
+            <input id="number" type="number" min="13" max="120" placeholder="Usia diantara 13 - 120 tahun..">
+          </label>
+          <!-- email -->
+          <label for="email" id="email-label">Email : 
+            <input id="email" type="email" required placeholder="Cth. email@gmail.com">
+          </label>
+          <!-- Pekerjaan -->
+          <label for="dropdown" class="dr">Apa pekerjaan anda saat ini?  
+            <select id="dropdown" name="dropdown-role">
+              <option disabled selected>--Pilih Satu--</option>
+              <option value="1">Pelajar</option>
+              <option value="2">Mahasiswa</option>
+              <option value="3">Pekerja Tetap</option>
+              <option value="4">Pekerja Paruh Waktu</option>
+              <option value="5">Lain-lain</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Fitur apa yang bekerja dengan optimal di website kami? (Boleh diisi lebih dari satu).</legend>
+          <label for="fitur">
+            <input  type="checkbox" value="1"> Authentikasi<br>
+            <input type="checkbox" value="2"> Kelola Akun<br>
+            <input type="checkbox" value="3"> Kelola Konser<br>
+            <input type="checkbox" value="4"> Kelola Artis<br>
+            <input type="checkbox" value="5"> Kelola Tiket<br>
+            <input type="checkbox" value="6"> Checkout & Pembayaran<br>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Berikan Saran dan Kritik!</legend>
+            <textarea placeholder="Kami harap aplikasi ini dapat...." cols="30" rows="5"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Kirim" id="submit">
+      </form>
+    </div>
+  </body>
+</html>  

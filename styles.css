@@ -1,0 +1,98 @@
+body {
+  background-color: #748e63;
+  color: #faf8ed;
+  font-size: 20px;
+  margin: 0;
+  font-family: Tahoma;
+}
+
+div {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+h1,
+p {
+  text-align: center;
+  margin: 1em auto;
+  max-width: 1000px;
+}
+
+p {
+  font-style: italic;
+}
+
+input,
+#dropdown,
+textarea {
+  width: 100%;
+  height: 35px;
+  background-color: #faf8ed;
+  border: none;
+  box-shadow: 3px 3px 10px black;
+  border-radius: 3px;
+}
+#dropdown {
+  margin-top: 10px;
+  color: gray;
+}
+
+input {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  height: 100px;
+}
+
+fieldset {
+  padding: 20px 0;
+  margin: 25px 0;
+  border: none;
+  border-bottom: 3px solid black;
+}
+
+fieldset:first-child {
+  border-top: 3px solid black;
+}
+
+legend {
+  font-size: 23px;
+}
+
+label,
+textarea {
+  display: block;
+  margin: 10px 0;
+}
+
+.gender {
+  width: unset;
+  height: unset;
+}
+
+input[type="checkbox"] {
+  width: unset;
+  height: unset;
+  margin: 10px 0;
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  width: 50%;
+  margin: 1em auto;
+  display: block;
+}
+
+input[type="submit"]:hover {
+  background-color: #557571;
+  color: white;
+}
+
+.jk {
+  display: inline;
+}
